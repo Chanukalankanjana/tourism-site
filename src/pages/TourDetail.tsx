@@ -928,18 +928,6 @@ export default function TourDetail({ tourId, onNavigateBack }: TourDetailProps) 
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="bg-gray-50 rounded-2xl p-6 sticky top-24">
-                <div className="mb-6">
-                  <div className="flex items-baseline space-x-3 mb-2">
-                    <span className="text-3xl font-bold text-emerald-600">{tourData.price}</span>
-                    {tourData.originalPrice && (
-                      <span className="text-lg text-gray-500 line-through">
-                        {tourData.originalPrice}
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-sm text-gray-600">per person</p>
-                </div>
-
                 <button
                   onClick={handleWhatsAppClick}
                   className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 mb-4"

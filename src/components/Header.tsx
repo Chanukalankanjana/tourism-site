@@ -77,13 +77,13 @@ export default function Header() {
           <div className="flex-shrink-0">
             <button
               onClick={navigateToHome}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3"
             >
-              <div className="w-8 h-8 bg-[#faf9f9] rounded-lg flex items-center justify-center">
-                <img src="/logo.png" alt="logo" />
+              <div className="w-10 h-10 bg-[#faf9f9] rounded-full flex items-center justify-center overflow-hidden border-2 border-white/20">
+                <img src="/logo.png" alt="logo" className="w-full h-full object-cover" />
               </div>
               <span
-                className={`text-xl font-bold ${
+                className={`text-2xl sm:text-3xl font-bold ${
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
